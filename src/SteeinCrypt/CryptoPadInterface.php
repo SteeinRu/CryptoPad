@@ -46,7 +46,7 @@ interface CryptoPadInterface
 	public function encrypt(string $text, $key = null) : string;
 
     /**
-     * Расшифрование текста
+     * Дешифрование текста
      *
      * @param $text
      * @param $key
@@ -65,7 +65,7 @@ interface CryptoPadInterface
     public function encryptBase64(string $text, $key = null, $safe = false) : string;
 
     /**
-     * Расшифровать текст, который кодируется в виде строки base64
+     * Дешировать текст, который кодируется в виде строки base64
      *
      * @param $text
      * @param null $key
