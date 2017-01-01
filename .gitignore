@@ -3,6 +3,4 @@
 ### Example user template
 
 /.idea
-out
-gen
-.gitignore
+/.gitignore
