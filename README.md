@@ -16,6 +16,7 @@ $key        = 'rUhidagNflImJ3wB';
 $global_key = '%31.1e$i86e$f!8jz';
 
 ```
+
 ### Standard encryption text
 ```php
 $encrypt = $crypto->encrypt('default text', $key);

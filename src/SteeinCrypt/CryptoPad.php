@@ -5,7 +5,7 @@ use SteeinCrypt\Exception\CryptoPadException;
 
 /**
  *
- * CryptPad - позволяет Шифровать / Расшифровать информацию
+ * CryptPad - позволяет безопастно шифровать / дешифровать информацию
  * Этот компонент обеспечивает безопасное шифрование с использованием AES-256-CBC.
  *
  * @see http://www.php.net/manual/en/book.openssl.php
