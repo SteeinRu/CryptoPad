@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+## Steein CryptoPad
 
-You can use the [editor on GitHub](https://github.com/SteeinSource/CryptoPad/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+CryptPad - allows you to encrypt / decrypt information
+This component provides a secure encryption using AES-256-CBC.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+**Example**
+[For details, see here](https://steeinsource.github.io/CryptoPad/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Version PHP** : >= 7.0 
 
-```markdown
-Syntax highlighted code block
+```php
+$crypto = new \SteeinCrypt\CryptoPad();
 
-# Header 1
-## Header 2
-### Header 3
+//Test key and global key
+$key        = 'rUhidagNflImJ3wB';
+$global_key = '%31.1e$i86e$f!8jz';
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+### Standard encryption text
+```php
+$encrypt = $crypto->encrypt('default text', $key);
+echo $encrypt;
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Standard decryption text
+```php
+$decrypt = $crypto->decrypt($encrypt, $key);
+echo $decrypt;
+```
 
-### Jekyll Themes
+### Encryption and Decryption of text in base64
+```php
+$encryptBase64 = $crypto->encryptBase64('base64_encrypt', $key, true);
+$crypto->decryptBase64($encryptBase64, $key, true);
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SteeinSource/CryptoPad/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Encryption using the global key
+
+```php
+$global_crypt = $crypto
+    ->setKey($global_key)
+    ->encrypt('default_text', $key);
+$crypto->decrypt($global_crypt, $key);
+```
+
+
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Author: Shamsudin Serderov
+Version Library: 1.0.0
+Email: sourcecode@steein.ru
