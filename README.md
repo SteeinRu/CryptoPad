@@ -1,4 +1,4 @@
-### CryptPad - allows you to encrypt / decrypt information.
+## Steein CryptoPad
 
 This component provides a secure encryption using AES-256-CBC.
 
