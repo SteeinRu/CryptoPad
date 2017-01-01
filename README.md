@@ -2,10 +2,6 @@
 
 This component provides a secure encryption using AES-256-CBC.
 
-
-**Example**
-[For details, see here](https://steeinsource.github.io/CryptoPad/)
-
 **Version PHP** : >= 7.0
 
 ```php
