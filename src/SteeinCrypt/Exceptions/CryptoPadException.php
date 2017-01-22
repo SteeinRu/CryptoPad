@@ -1,5 +1,5 @@
 <?php
-namespace SteeinCrypt\Exception;
+namespace SteeinCrypt\Exceptions;
 
 class CryptoPadException extends \Exception
 {

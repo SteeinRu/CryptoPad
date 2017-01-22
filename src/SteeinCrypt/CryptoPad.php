@@ -1,7 +1,7 @@
 <?php
 namespace SteeinCrypt;
 
-use SteeinCrypt\Exception\CryptoPadException;
+use SteeinCrypt\Exceptions\CryptoPadException;
 
 /**
  *
